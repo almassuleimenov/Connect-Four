@@ -1,0 +1,14 @@
+
+> connect-four@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 653ms
+
+○ Compiling / ...
+ HEAD / 200 in 3.8s (next.js: 3.5s, application-code: 283ms)
+ GET / 200 in 114ms (next.js: 10ms, application-code: 104ms)
+ GET / 200 in 71ms (next.js: 4ms, application-code: 67ms)
+ GET / 200 in 76ms (next.js: 5ms, application-code: 71ms)
