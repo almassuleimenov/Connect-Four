@@ -20,7 +20,7 @@ export class BitBoard {
   public player2: bigint; // Represents player 2 (yellow)
   public heights: number[]; // Next available row for each column
   public moves: number;
-
+//D:\Downloads\jules_session\src\lib\game\bitboard.ts
   constructor() {
     this.player1 = 0n;
     this.player2 = 0n;

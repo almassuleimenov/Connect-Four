@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chip } from './Chip';
-
+//D:\Downloads\jules_session\src\components\Board.tsx
 interface BoardProps {
   grid: number[][]; // 6 rows, 7 cols
   winningCells?: { row: number; col: number }[];

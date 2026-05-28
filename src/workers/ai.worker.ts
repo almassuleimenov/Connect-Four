@@ -1,6 +1,6 @@
 import { BitBoard } from '../lib/game/bitboard';
 import { getBestMove } from '../lib/game/minimax';
-
+//D:\Downloads\jules_session\src\workers\ai.worker.ts
 // Web Worker for offloading AI calculations
 self.onmessage = (e: MessageEvent) => {
   const { grid, depth, isPlayer1AI } = e.data;

@@ -1,5 +1,5 @@
 import { BitBoard, COLS, ROWS } from './bitboard';
-
+//D:\Downloads\jules_session\src\lib\game\minimax.ts
 // Evaluation Constants
 const WIN_SCORE = 1000000;
 const DRAW_SCORE = 0;

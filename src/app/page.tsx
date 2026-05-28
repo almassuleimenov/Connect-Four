@@ -5,7 +5,7 @@ import { Board } from '@/components/Board';
 import { GameHUD } from '@/components/GameHUD';
 import { useGameState } from '@/hooks/useGameState';
 import confetti from 'canvas-confetti';
-
+//D:\Downloads\jules_session\src\app/page.tsx
 export default function Home() {
   const { state, playMove, setThinking, resetGame } = useGameState();
   const workerRef = useRef<Worker | null>(null);

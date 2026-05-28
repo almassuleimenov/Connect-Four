@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-
+//D:\Downloads\jules_session\src\components\Chip.tsx
 interface ChipProps {
   player: number; // 0 = empty, 1 = player 1, 2 = player 2
   isWinning?: boolean;
