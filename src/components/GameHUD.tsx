@@ -1,11 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
-import { RefreshCw, Zap } from 'lucide-react';
-//D:\Downloads\jules_session\src\components/GameHUD.tsx
-=======
 import { RefreshCw, Zap, Sparkles, Smile, Bot } from 'lucide-react';
 
->>>>>>> 765c772524cbd67acb9dda93819b2d7afa7b0846
 interface GameHUDProps {
   currentPlayer: number; // 1 or 2
   winner: number | null;

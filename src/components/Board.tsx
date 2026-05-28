@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { Chip } from './Chip';
-<<<<<<< HEAD
-//D:\Downloads\jules_session\src\components\Board.tsx
-=======
 import { cn } from '@/lib/utils';
 
->>>>>>> 765c772524cbd67acb9dda93819b2d7afa7b0846
 interface BoardProps {
   grid: number[][]; // 6 rows, 7 cols
   winningCells?: { row: number; col: number }[];

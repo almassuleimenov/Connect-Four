@@ -5,12 +5,8 @@ import { Board } from '@/components/Board';
 import { GameHUD } from '@/components/GameHUD';
 import { useGameState } from '@/hooks/useGameState';
 import confetti from 'canvas-confetti';
-<<<<<<< HEAD
-//D:\Downloads\jules_session\src\app/page.tsx
-=======
-import { Sparkles, Trophy, Play, Gamepad2, LogOut, ArrowLeft, Lightbulb } from 'lucide-react';
+import { Gamepad2, Sparkles, Trophy, Play, LogOut, ArrowLeft, Lightbulb } from 'lucide-react';
 
->>>>>>> 765c772524cbd67acb9dda93819b2d7afa7b0846
 export default function Home() {
   const { state, playMove, setThinking, resetGame } = useGameState();
   const workerRef = useRef<Worker | null>(null);
