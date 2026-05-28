@@ -1,6 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import { RefreshCw, Zap } from 'lucide-react';
 //D:\Downloads\jules_session\src\components/GameHUD.tsx
+=======
+import { RefreshCw, Zap, Sparkles, Smile, Bot } from 'lucide-react';
+
+>>>>>>> 765c772524cbd67acb9dda93819b2d7afa7b0846
 interface GameHUDProps {
   currentPlayer: number; // 1 or 2
   winner: number | null;
@@ -12,27 +17,30 @@ interface GameHUDProps {
 
 export function GameHUD({ currentPlayer, winner, isThinking, onReset, onAIAdvice, isPro = false }: GameHUDProps) {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-2xl bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm mb-6">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-2xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-md p-5 rounded-3xl shadow-xl mb-8 border-2 border-white/50 dark:border-gray-700/50 animate-in fade-in slide-in-from-top-4 duration-700">
       <div className="flex items-center space-x-4 mb-4 md:mb-0">
-        <div className="text-lg font-semibold dark:text-gray-200">
+        <div className="text-xl font-bold dark:text-gray-100 flex items-center">
           {winner ? (
             winner === 3 ? (
-              <span className="text-gray-500">It&apos;s a Draw!</span>
+              <span className="text-gray-500 flex items-center gap-2">
+                🤝 It's a friendly tie!
+              </span>
             ) : (
-              <span className={winner === 1 ? 'text-pastel-red' : 'text-pastel-yellow'}>
-                Player {winner} Wins!
+              <span className={`flex items-center gap-2 animate-bounce ${winner === 1 ? 'text-rose-500' : 'text-amber-500'}`}>
+                <Sparkles className="w-5 h-5" /> Ура! Игрок {winner} победил! <Sparkles className="w-5 h-5" />
               </span>
             )
           ) : (
-            <span className="flex items-center">
-              Turn: 
-              <span className={`ml-2 w-4 h-4 rounded-full inline-block ${currentPlayer === 1 ? 'bg-pastel-red' : 'bg-pastel-yellow'}`} />
+            <span className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded-2xl">
+              <Smile className={`w-5 h-5 ${currentPlayer === 1 ? 'text-rose-500' : 'text-amber-500'}`} />
+              Твой ход:
+              <span className={`ml-1 w-5 h-5 rounded-full shadow-sm inline-block ${currentPlayer === 1 ? 'bg-gradient-to-br from-pink-300 to-rose-400' : 'bg-gradient-to-br from-yellow-200 to-amber-400'}`} />
             </span>
           )}
         </div>
         {isThinking && (
-          <div className="text-sm text-gray-500 dark:text-gray-400 animate-pulse flex items-center">
-             <RefreshCw className="w-4 h-4 mr-1 animate-spin" /> AI is thinking...
+          <div className="text-sm text-indigo-500 dark:text-indigo-400 animate-pulse flex items-center bg-indigo-50 dark:bg-indigo-900/30 px-3 py-1.5 rounded-full font-medium">
+             <Bot className="w-4 h-4 mr-2 animate-bounce" /> Хмм... я думаю 🧠
           </div>
         )}
       </div>
@@ -42,25 +50,25 @@ export function GameHUD({ currentPlayer, winner, isThinking, onReset, onAIAdvice
           <button
             onClick={onAIAdvice}
             disabled={!isPro || !winner}
-            className={`flex items-center px-4 py-2 rounded-lg font-medium transition-colors ${
+            className={`flex items-center px-5 py-2.5 rounded-2xl font-bold transition-all active:scale-95 ${
               !isPro 
                 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
                 : !winner 
                   ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                  : 'bg-pastel-purple text-white hover:bg-opacity-90 shadow-sm'
+                  : 'bg-gradient-to-r from-purple-400 to-indigo-400 text-white hover:from-purple-500 hover:to-indigo-500 shadow-md hover:shadow-lg'
             }`}
             title={!isPro ? "Requires Pro Subscription" : "Get AI Coach Advice"}
           >
             <Zap className="w-4 h-4 mr-2" />
-            AI Coach
+            Совет ИИ ✨
           </button>
         )}
         <button
           onClick={onReset}
-          className="flex items-center px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg text-gray-800 dark:text-gray-200 font-medium transition-colors"
+          className="flex items-center px-5 py-2.5 bg-rose-100 dark:bg-rose-900/30 hover:bg-rose-200 dark:hover:bg-rose-800/40 rounded-2xl text-rose-600 dark:text-rose-300 font-bold transition-all active:scale-95 border border-rose-200 dark:border-rose-800/50"
         >
           <RefreshCw className="w-4 h-4 mr-2" />
-          Reset
+          Сыграть еще раз 🔄
         </button>
       </div>
     </div>
