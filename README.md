@@ -49,3 +49,4 @@
 ---
 
 ## 🚀 Сайт нашей игры
+https://connect-four-lilac.vercel.app/
