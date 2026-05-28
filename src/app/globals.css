@@ -7,6 +7,8 @@
   --color-pastel-blue: var(--pastel-blue);
   --color-pastel-purple: var(--pastel-purple);
   --color-pastel-yellow: var(--pastel-yellow);
+
+  --font-pixel: var(--font-press-start-2p);
 }
 
 @layer base {
