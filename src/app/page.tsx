@@ -283,7 +283,7 @@ export default function Home() {
             У нас появилась новая секретная ссылка!
           </p>
           <a
-            href="#"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXCgBwE%3D"
             className="group relative px-8 py-4 bg-white/10 hover:bg-white/20 rounded-full font-bold text-xl overflow-hidden transition-all"
           >
             <div className="absolute inset-0 w-0 bg-gradient-to-r from-pastel-purple to-pastel-blue transition-all duration-[250ms] ease-out group-hover:w-full opacity-50"></div>
