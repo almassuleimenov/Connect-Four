@@ -191,6 +191,13 @@ export default function Home() {
       </button>
 
       <button
+        onClick={() => {}}
+        className="w-full py-4 px-6 bg-blue-500/20 hover:bg-blue-500/40 text-blue-100 font-semibold text-lg rounded-xl backdrop-blur-sm transition-all border border-blue-500/10"
+      >
+        Играть в блютуз
+      </button>
+
+      <button
         onClick={() => setCurrentView('leaderboard')}
         className="w-full py-4 px-6 bg-white/10 hover:bg-white/20 text-white font-semibold text-lg rounded-xl backdrop-blur-sm transition-all border border-white/5"
       >
